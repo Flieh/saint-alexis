@@ -55,3 +55,8 @@ ul, li {}
   width: 500px;
   margin: 20px;
 }
+.plan-caption {
+  text-align: center;
+  background-color: white;
+  border-radius: 5px;
+}
