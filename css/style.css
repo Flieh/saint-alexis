@@ -1,62 +1,78 @@
 html {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
-*, *:before, *:after {
-  box-sizing: inherit;
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
 }
 
 body {
-  margin: 10px;
-  padding: 10px;
-  background-image: url('../assets/porte+background.jpg');
+    margin: 10px;
+    padding: 10px;
+    background-image: url('../assets/porte+background.jpg');
 }
+
 a {
-  color: inherit;
-  text-decoration: inherit;
+    color: inherit;
+    text-decoration: inherit;
 }
+
 a:hover {
-  color: inherit;
-  text-decoration: inherit;
+    color: inherit;
+    text-decoration: inherit;
 }
+
 .nav-list {}
+
 .nav-item {
-  justify-content: center;
-  margin: 5px;
+    justify-content: center;
+    margin: 5px;
 }
-ul, li {}
+
+ul,
+li {}
+
 .logo {
-  background: radial-gradient(green, lightgreen, transparent );
-  padding: 10px;
+    background: radial-gradient(green, lightgreen, transparent);
+    padding: 10px;
 }
+
 .flexslider {
-  max-width: 300px;
+    max-width: 300px;
 }
+
 .fb-cntnr {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
+
 .fb-item {
-  margin: auto;
+    margin: auto;
 }
+
 .main-nav {}
 
-.diapo {
-  margin: 20px auto 40px auto;
-}
+.diapo {}
+
 .placeholder {
-  width: 300px;
-  height: 200px;
-  background-color: white;
+    width: 300px;
+    height: 200px;
+    background-color: white;
 }
+
 .accueil {
-  background-color: white;
+    background-color: white;
 }
+
 .menu-page {
-  width: 500px;
-  margin: 20px;
+    width: 500px;
+    margin: 20px;
 }
+
 .plan-caption {
-  text-align: center;
-  background-color: white;
-  border-radius: 5px;
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
 }
