@@ -12,6 +12,7 @@ body {
     margin: 10px;
     padding: 10px;
     background-image: url('../assets/porte+background.jpg');
+    height: 2000px;
 }
 
 a {
@@ -24,55 +25,102 @@ a:hover {
     text-decoration: inherit;
 }
 
-.nav-list {}
-
-.nav-item {
-    justify-content: center;
-    margin: 5px;
+.flex-column  {
+    display: flex;
+    flex-direction: column;
+}
+.flex-row {
+    display: flex;
 }
 
-ul,
-li {}
-
-.logo {
-    background: radial-gradient(green, lightgreen, transparent);
-    padding: 10px;
-}
-
-.flexslider {
-    max-width: 300px;
-}
-
-.fb-cntnr {
+#display-fbc {
+    margin: auto;
+    width: 800px;
     display: flex;
     flex-direction: column;
 }
 
-.fb-item {
-    margin: auto;
+#header-fbc {
+    margin: 0 auto 40px auto;
+    display: flex;
+}
+.margin-center {
+    margin: 0 auto;
 }
 
-.main-nav {}
+#nav-fbc {
+    display: flex;
+    flex-direction: column;
+}
 
-.diapo {}
+#nav-list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.nav-item {
+    flex-shrink: 2;
+}
+
+#main-fbc {
+    margin: 20px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: inherit;
+    overflow: auto;
+}
+
+#footer-fbc {
+    margin: auto;
+    display: flex;
+}
+
+.logo {
+    background: radial-gradient( white, transparent);
+    padding: 10px;
+}
 
 .placeholder {
+    margin: 40px auto;
+    padding: 10px;
     width: 300px;
-    height: 200px;
     background-color: white;
 }
 
-.accueil {
+.contact {
+    padding: 10px;
+    margin: auto;
     background-color: white;
 }
 
-.menu-page {
-    width: 500px;
-    margin: 20px;
+.bg-white {
+    background-color: white;
+}
+.bg-black {
+    background-color: black;
+}
+.width-thumbnail {
+    width: 300px;
+}
+.margin-center {
+    margin 0 auto;
+}
+.border {
+    border-radius; 7px;
 }
 
-.plan-caption {
-    text-align: center;
+#carte-fbc {
+    padding: 10px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+#thumbnail-diapo {
+    margin: auto;
+    width: 300px;
     background-color: white;
-    border-radius: 5px;
 }
