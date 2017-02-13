@@ -10,7 +10,7 @@ $(document).ready(function() {
       if (!$('#accueil').children('button').hasClass('btn-default')) {
         $('button').removeClass('btn-default').addClass('btn-primary')
         $('#accueil').children('button').removeClass('btn-primary').addClass('btn-default')
-        $.get('pages/diapo.html', function(data) {
+        $.get('pages/accueil.html', function(data) {
           $('main').html(data)
         })
       }
@@ -20,24 +20,6 @@ $(document).ready(function() {
         $('button').removeClass('btn-default').addClass('btn-primary')
         $('#la-carte').children('button').removeClass('btn-primary').addClass('btn-default')
         $.get('pages/carte.html', function(data) {
-          $('main').html(data)
-        })
-      }
-    })
-    $('#en-images').children('button').click(function() {
-      if (!$('#en-images').children('button').hasClass('btn-default')) {
-        $('button').removeClass('btn-default').addClass('btn-primary')
-        $('#en-images').children('button').removeClass('btn-primary').addClass('btn-default')
-        $.get('pages/diapo.html', function(data) {
-          $('main').html(data)
-        })
-      }
-    })
-    $('#notre-histoire').children('button').click(function() {
-      if (!$('#notre-histoire').children('button').hasClass('btn-default')) {
-        $('button').removeClass('btn-default').addClass('btn-primary')
-        $('#notre-histoire').children('button').removeClass('btn-primary').addClass('btn-default')
-        $.get('pages/histor.html', function(data) {
           $('main').html(data)
         })
       }
@@ -56,15 +38,6 @@ $(document).ready(function() {
         $('button').removeClass('btn-default').addClass('btn-primary')
         $('#avis').children('button').removeClass('btn-primary').addClass('btn-default')
         $.get('pages/avis.html', function(data) {
-          $('main').html(data)
-        })
-      }
-    })
-    $('#nous-contacter').children('button').click(function() {
-      if (!$('#nous-contacter').children('button').hasClass('btn-default')) {
-        $('button').removeClass('btn-default').addClass('btn-primary')
-        $('#nous-contacter').children('button').removeClass('btn-primary').addClass('btn-default')
-        $.get('pages/contact.html', function(data) {
           $('main').html(data)
         })
       }

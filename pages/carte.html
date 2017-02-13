@@ -1,23 +1,32 @@
-<div id="carte-fbc">
-    <!-- don't tamper with the classes 'flexslider' or 'slides' -->
-    <div id="carte-diapo" class="flexslider">
+<div class="margin-center width-carte border bg-white">
+    <div class="flexslider border">
         <ul class="slides">
-            <li><img class="carte-page" src="assets/p1.jpg" alt=""></li>
-            <li><img class="carte-page" src="assets/p2.jpg" alt=""></li>
-            <li><img class="carte-page" src="assets/p3.jpg" alt=""></li>
-            <li><img class="carte-page" src="assets/p4.jpg" alt=""></li>
+            <li>
+                <img src="assets/carte/carte-0.jpg" />
+            </li>
+            <li>
+                <img src="assets/carte/carte-1.jpg" />
+            </li>
+            <li>
+                <img src="assets/carte/carte-2.jpg" />
+            </li>
+            <li>
+                <img src="assets/carte/carte-3.jpg" />
+            </li>
         </ul>
     </div>
 </div>
-
+<div class="placeholder border controls">
+    <p>Accueil...en construciton...</p>
+</div>
 <script type="text/javascript">
     $('.flexslider').flexslider({
-        animation: "slide",
+        animation: "fade",
         direction: "horizontal",
         smoothHeight: true,
         slideshowSpeed: 6000,
-        randomize: true,
-        animationSpeed: 500,
+        randomize: false,
+        animationSpeed: 1,
         pausePlay: true
     })
 </script>
