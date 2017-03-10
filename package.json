@@ -16,5 +16,7 @@
     "url": "https://github.com/Flieh/saint-alexis/issues"
   },
   "homepage": "https://github.com/Flieh/saint-alexis#readme",
-  "devDependencies": {}
+  "devDependencies": {
+    "browser-sync": "^2.18.8"
+  }
 }

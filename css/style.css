@@ -64,11 +64,14 @@ a:hover {
     list-style-type: none;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .nav-item {
     flex-shrink: 2;
+    }
+.margin-side {
+    margin-right: 25px;
 }
 
 #main-fbc {
