@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Macondo');
 html {
     box-sizing: border-box;
 }
@@ -7,15 +8,20 @@ html {
 *:after {
     box-sizing: inherit;
 }
-
 body {
     margin: 10px;
     padding: 10px;
     background-image: url('../assets/saint-al-porte-unsaturated.jpg');
     background-repeat: no-repeat;
     height: 2000px;
+    font-family: Macondo, serif;
 }
-
+.bigfont {
+    font-size: 24px;
+}
+.italic {
+    font-style: italic;
+}
 a {
     color: inherit;
     text-decoration: inherit;
@@ -50,11 +56,18 @@ a:hover {
 .margin-center {
     margin: 0 auto;
 }
-
+.margin-top {
+    margin-top: 20px;
+}
 .margin-bottom {
     margin-bottom: 20px;
 }
-
+.margin-left {
+    margin-left: 20px;
+}
+.margin-right {
+    margin-right: 20px;
+}
 #nav-fbc {
     display: flex;
     flex-direction: column;
