@@ -41,18 +41,6 @@ a:hover {
     display: flex;
 }
 
-#display-fbc {
-    margin: auto;
-    width: 800px;
-    display: flex;
-    flex-direction: column;
-}
-
-#header-fbc {
-    margin: 0 auto 40px auto;
-    display: flex;
-}
-
 .margin-center {
     margin: 0 auto;
 }
@@ -67,10 +55,6 @@ a:hover {
 }
 .margin-right {
     margin-right: 20px;
-}
-#nav-fbc {
-    display: flex;
-    flex-direction: column;
 }
 
 #nav-list {
