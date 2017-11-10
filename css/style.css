@@ -118,6 +118,9 @@ a:hover {
 .width-carte {
     width: 80%;
 }
+.width-plan {
+    width: 70%;
+}
 
 .border {
     border-radius: 7px;
