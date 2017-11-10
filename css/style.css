@@ -86,6 +86,7 @@ a:hover {
 }
 
 .logo {
+    width: 75%;
     background: radial-gradient( white, transparent);
     padding: 10px;
 }
@@ -111,11 +112,11 @@ a:hover {
 }
 
 .width-thumbnail {
-    width: 400px;
+    width: 50%;
 }
 
 .width-carte {
-    width: 750px;
+    width: 80%;
 }
 
 .border {
@@ -141,4 +142,10 @@ a:hover {
 
 .padding {
     padding: 15px;
+}
+.cycle-slideshow img {
+    width: 100%;
+}
+.inner {
+    margin: 10%;
 }

@@ -1,29 +1,9 @@
-<div class="flex-column margin-center width-carte border bg-white">
-    <div class="flexslider border">
-        <ul class="slides">
-            <li>
-                <img src="assets/carte/carte-0.jpg" />
-            </li>
-            <li>
-                <img src="assets/carte/carte-1.jpg" />
-            </li>
-            <li>
-                <img src="assets/carte/carte-2.jpg" />
-            </li>
-            <li>
-                <img src="assets/carte/carte-3.jpg" />
-            </li>
-        </ul>
+<div class="center-block width-thumbnail border bg-white">
+    <div class="cycle-slideshow inner">
+        <img src="assets/carte/carte-0.jpg" />
+        <img src="assets/carte/carte-1.jpg" />
+        <img src="assets/carte/carte-2.jpg" />
+        <img src="assets/carte/carte-3.jpg" />
     </div>
 </div>
-<script type="text/javascript">
-    $('.flexslider').flexslider({
-        animation: "fade",
-        direction: "horizontal",
-        smoothHeight: true,
-        slideshowSpeed: 6000,
-        randomize: false,
-        animationSpeed: 1,
-        pausePlay: true
-    })
-</script>
+<script src="../js/jquery.cycle2.min.js"></script>
