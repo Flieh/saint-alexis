@@ -11,6 +11,12 @@ $(document).ready(function () {
       $('#accueil').children('button').removeClass('btn-primary').addClass('btn-default')
       $.get('pages/accueil.html', function (data) {
         $('main').html(data)
+        $(document).ready(function () {
+          $('.slider').bxSlider({
+            auto: true,
+            pager: false
+          })
+        })
       })
     })
     $('#la-carte').children('button').on('click', function () {
@@ -18,6 +24,12 @@ $(document).ready(function () {
       $('#la-carte').children('button').removeClass('btn-primary').addClass('btn-default')
       $.get('pages/carte.html', function (data) {
         $('main').html(data)
+        $(document).ready(function () {
+          $('.slider').bxSlider({
+            auto: true,
+            pager: false
+          })
+        })
       })
     })
     $('#plan-acces').children('button').on('click', function () {
@@ -30,5 +42,11 @@ $(document).ready(function () {
   })
   $.get('pages/accueil.html', function (data) {
     $('main').html(data)
+    $(document).ready(function () {
+      $('.slider').bxSlider({
+        auto: true,
+        pager: false
+      })
+    })
   })
 })
