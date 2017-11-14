@@ -16,7 +16,7 @@ $(window).ready(function () {
                 $('.slider').bxSlider({
                   auto: true,
                   pager: false
-                })
+                }).reloadSlider()
               })
             })
             $('#la-carte').children('button').on('click', function () {
@@ -27,7 +27,7 @@ $(window).ready(function () {
                 $('.slider').bxSlider({
                   auto: true,
                   pager: false
-                })
+                }).reloadSlider()
               })
             })
             $('#plan-acces').children('button').on('click', function () {
@@ -36,11 +36,11 @@ $(window).ready(function () {
               $('main').html(plan)
             })
             $('main').html(accueil)
-            $(document).ready(function () {
+            $(window).ready(function () {
               $('.slider').bxSlider({
                 auto: true,
                 pager: false
-              })
+              }).reloadSlider()
             })
           })
         })
