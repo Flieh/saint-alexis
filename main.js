@@ -1,5 +1,5 @@
 'use strict'
-$(document).ready(function () {
+$(window).ready(function () {
   $.get('pages/logo.html', function (data) {
     $('header').html(data)
   })
