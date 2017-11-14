@@ -37,10 +37,11 @@ $(window).ready(function () {
             })
             $('main').html(accueil)
             $(window).ready(function () {
+              $('.slider').bxSlider().destroySlider()
               $('.slider').bxSlider({
                 auto: true,
                 pager: false
-              }).redrawSlider()
+              }).reloadSlider()
             })
           })
         })
