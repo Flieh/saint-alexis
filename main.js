@@ -40,7 +40,7 @@ $(window).ready(function () {
               $('.slider').bxSlider({
                 auto: true,
                 pager: false
-              }).reloadSlider()
+              }).redrawSlider()
             })
           })
         })
