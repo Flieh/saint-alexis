@@ -7,6 +7,12 @@ $(window).ready(function () {
           $.get('pages/plan.html', function (plan) {
             $('header').html(logo)
             $('nav').html(nav)
+            $('main').html(accueil)
+            $(window).ready(function () {
+              $('.slider').bxSlider({
+                pager: false
+              }).startAuto()
+            })
             $('#accueil').children('button').removeClass('btn-primary').addClass('btn-default')
             $('#accueil').children('button').on('click', function () {
               $('button').removeClass('btn-default').addClass('btn-primary')
@@ -34,14 +40,6 @@ $(window).ready(function () {
               $('button').removeClass('btn-default').addClass('btn-primary')
               $('#plan-acces').children('button').removeClass('btn-primary').addClass('btn-default')
               $('main').html(plan)
-            })
-            $('main').html(accueil)
-            $(window).ready(function () {
-              $('.slider').bxSlider().destroySlider()
-              $('.slider').bxSlider({
-                auto: true,
-                pager: false
-              }).reloadSlider()
             })
           })
         })
