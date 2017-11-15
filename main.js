@@ -1,5 +1,5 @@
 'use strict'
-$(window).ready(function () {
+$(document).ready(function () {
   $.get('pages/logo.html', function (logo) {
     $.get('pages/nav.html', function (nav) {
       $.get('pages/accueil.html', function (accueil) {
@@ -7,41 +7,54 @@ $(window).ready(function () {
           $.get('pages/plan.html', function (plan) {
             $('header').html(logo)
             $('nav').html(nav)
+            $('main').html(accueil)
+            $(window).ready(function () {
+              $('.flexslider').flexslider({
+                selector: '.slides > img',
+                controlNav: false,
+                directionNav: false,
+                randomize: true
+              })
+              $('.flexslider').removeClass('hidden')
+            })
             $('#accueil').children('button').removeClass('btn-primary').addClass('btn-default')
             $('#accueil').children('button').on('click', function () {
               $('button').removeClass('btn-default').addClass('btn-primary')
               $('#accueil').children('button').removeClass('btn-primary').addClass('btn-default')
               $('main').html(accueil)
-              $(document).ready(function () {
-                $('.slider').bxSlider({
-                  auto: true,
-                  pager: false
-                }).reloadSlider()
+              $(window).ready(function () {
+                $('.flexslider').flexslider({
+                  selector: '.slides > img',
+                  controlNav: false,
+                  directionNav: false,
+                  randomize: true
+                })
+                $('.flexslider').removeClass('hidden')
               })
             })
             $('#la-carte').children('button').on('click', function () {
               $('button').removeClass('btn-default').addClass('btn-primary')
               $('#la-carte').children('button').removeClass('btn-primary').addClass('btn-default')
               $('main').html(carte)
-              $(document).ready(function () {
-                $('.slider').bxSlider({
-                  auto: true,
-                  pager: false
-                }).reloadSlider()
+              $(window).ready(function () {
+                $('.flexslider').flexslider({
+                  selector: '.slides > a',
+                  controlNav: false
+                })
+                $('.flexslider').removeClass('hidden')
               })
             })
             $('#plan-acces').children('button').on('click', function () {
               $('button').removeClass('btn-default').addClass('btn-primary')
               $('#plan-acces').children('button').removeClass('btn-primary').addClass('btn-default')
               $('main').html(plan)
-            })
-            $('main').html(accueil)
-            $(window).ready(function () {
-              $('.slider').bxSlider().destroySlider()
-              $('.slider').bxSlider({
-                auto: true,
-                pager: false
-              }).reloadSlider()
+              $('.flexslider').flexslider({
+                selector: '.slides > div',
+                controlNav: false,
+                slideShow: false,
+                animation: "slide"
+              })
+              $('.flexslider').removeClass('hidden')
             })
           })
         })
