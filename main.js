@@ -1,4 +1,3 @@
-'use strict'
 $(document).ready(function () {
   $.get('pages/logo.html', function (logo) {
     $.get('pages/nav.html', function (nav) {
@@ -17,8 +16,7 @@ $(document).ready(function () {
               })
               $('.flexslider').removeClass('hidden')
             })
-            $('#accueil').children('button').removeClass('btn-primary').addClass('btn-default')
-            $('#accueil').children('button').on('click', function () {
+            $('#accueil button').on('click', function () {
               $('button').removeClass('btn-default').addClass('btn-primary')
               $('#accueil').children('button').removeClass('btn-primary').addClass('btn-default')
               $('main').html(accueil)
@@ -32,7 +30,7 @@ $(document).ready(function () {
                 $('.flexslider').removeClass('hidden')
               })
             })
-            $('#la-carte').children('button').on('click', function () {
+            $('#la-carte button').on('click', function () {
               $('button').removeClass('btn-default').addClass('btn-primary')
               $('#la-carte').children('button').removeClass('btn-primary').addClass('btn-default')
               $('main').html(carte)
@@ -44,7 +42,7 @@ $(document).ready(function () {
                 $('.flexslider').removeClass('hidden')
               })
             })
-            $('#plan-acces').children('button').on('click', function () {
+            $('#plan-acces button').on('click', function () {
               $('button').removeClass('btn-default').addClass('btn-primary')
               $('#plan-acces').children('button').removeClass('btn-primary').addClass('btn-default')
               $('main').html(plan)
