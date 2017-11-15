@@ -52,7 +52,7 @@ $(document).ready(function () {
                 selector: '.slides > div',
                 controlNav: false,
                 slideShow: false,
-                animation: "slide"
+                animation: 'slide'
               })
               $('.flexslider').removeClass('hidden')
             })
