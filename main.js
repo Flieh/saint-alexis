@@ -1,21 +1,21 @@
 $(document).ready(function () {
   $.get('pages/logo.html', function (logo) {
+    $('header').html(logo)
     $.get('pages/nav.html', function (nav) {
+      $('nav').html(nav)
       $.get('pages/accueil.html', function (accueil) {
+        $('main').html(accueil)
+        $(window).ready(function () {
+          $('.flexslider').flexslider({
+            selector: '.slides > img',
+            controlNav: false,
+            directionNav: false,
+            randomize: true
+          })
+          $('.flexslider').removeClass('hidden')
+        })
         $.get('pages/carte.html', function (carte) {
           $.get('pages/plan.html', function (plan) {
-            $('header').html(logo)
-            $('nav').html(nav)
-            $('main').html(accueil)
-            $(window).ready(function () {
-              $('.flexslider').flexslider({
-                selector: '.slides > img',
-                controlNav: false,
-                directionNav: false,
-                randomize: true
-              })
-              $('.flexslider').removeClass('hidden')
-            })
             $('#accueil button').on('click', function () {
               $('button').removeClass('btn-default').addClass('btn-primary')
               $('#accueil').children('button').removeClass('btn-primary').addClass('btn-default')
