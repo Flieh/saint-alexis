@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/Flieh/saint-alexis#readme",
   "devDependencies": {
-    "browser-sync": "^2.18.8"
+    "browser-sync": "^2.26.12"
   },
   "dependencies": {
     "standard": "^10.0.3"
