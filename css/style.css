@@ -62,6 +62,7 @@ a:hover {
 }
 .alert {
     color: red;
+    font-size: 20px;
 }
 
 #nav-list {
