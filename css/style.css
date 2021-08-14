@@ -60,6 +60,9 @@ a:hover {
 .bold {
     font-weight: bold;
 }
+.alert {
+    color: red;
+}
 
 #nav-list {
     list-style-type: none;
